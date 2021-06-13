@@ -1,0 +1,17 @@
+To find centers:
+	1. find coordinates of endpoints of line
+	2. use bresenham to increment value of every point on line
+	3. find spaces in picture with high points (threshold)
+	4. change those spaces to different colors
+	5. output image
+To find edges:
+	1. go through every center
+	2. go through every edge
+	3. make a list of distances
+	4. add 1 to the list index for the distance between the edge and the circle
+	5. the distance with the most votes is the correct distance so all of those edges are the circle edges
+	6. highlight all those circle edges
+To find coins:
+	1. find the 3 different radius ranges
+	2. smallest is penny, medium is nickel, large is quarter
+	3. add up cost
